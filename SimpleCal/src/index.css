@@ -1,0 +1,10 @@
+.control{
+  height: 40px;
+  width: 200px;
+}
+.btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
