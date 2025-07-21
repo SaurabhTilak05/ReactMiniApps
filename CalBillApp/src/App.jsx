@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import ReactDom from "react-dom";
 
-function App() {
-  const [count, setCount] = useState(0)
+class App extends React.Component{
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  constructor(){
+    super();
+    this.state={
+      qty:0,
+      rate:0,
+      total:0
+    }
+  }
+
+    render(){
+      return <>
+          <div className="container mt-5 p-5 bg-dark ">
+
+            <div className="form-group">
+              <input type="text" name="" id="" value={this.state.qty}  className="form-control" onChange={(e)=>this.setState({qty:e.target.value})}/>
+            </div>
+
+            <div className="form-group">
+              <input type="text" name="" id="" value={this.state.rate}  className="form-control" onChange={(e)=>this.setState({rate:e.target.value})}/>
+            </div>
+
+            <div className="form-group">
+              <input type="text" name="total" id="" value={`Total:  `+parseInt(this.state.qty)* parseInt(this.state.rate)} className="form-control" />
+
+            </div>
+          </div>
+      </>
+    }
+
+
 }
 
-export default App
+export default App;
