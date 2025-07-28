@@ -33,8 +33,12 @@ class App extends React.Component {
 
     return (
       <BrowserRouter>
-        <nav className="navbar navbar-expand-lg navbar-primary p-3 bg-primary">
+      <nav className="navbar navbar-expand-lg navbar-primary p-3 bg-primary">
+
           <NavLink className="nav-link text-white pr-5" to="/">Quiz App</NavLink>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav">
               <li className="nav-item">
@@ -46,8 +50,12 @@ class App extends React.Component {
               <li className="nav-item">
                 <NavLink className="nav-link text-white" to="/AttendExam">📝Attend Exam</NavLink>
               </li>
-             
+           
             </ul>
+                 <form class="form-inline my-2  my-lg-0 m-auto ">
+                <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search" />
+                
+    </form>
           </div>
         </nav>
 
