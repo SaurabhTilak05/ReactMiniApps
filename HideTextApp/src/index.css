@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.main{
+    height: 300px;
+    width: 600px;
+    display: flex;
+    background: linear-gradient(to top, rgb(20, 10, 10), rgb(102, 100, 100),rgb(19, 19, 11));
+    color: white;
+    justify-content: center;
+    padding: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    background-color: aquamarine;
+}
+button:hover{
+      background-color: rgb(9, 3, 23);
+      color: white;
+      scale: 1.1;
+}
