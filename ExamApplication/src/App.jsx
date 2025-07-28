@@ -34,17 +34,17 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <nav className="navbar navbar-expand-lg navbar-primary p-3 bg-primary">
-         <NavLink className="nav-link text-dark " to="/">Quiz App</NavLink>
+          <NavLink className="nav-link text-white pr-5" to="/">Quiz App</NavLink>
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink className="nav-link text-white" to="/addQuestion">Add Question</NavLink>
+                <NavLink className="nav-link text-white" to="/addQuestion">➕Add Question</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link text-white" to="/viewQuestion">View Question</NavLink>
+                <NavLink className="nav-link text-white" to="/viewQuestion">👀View Question</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link text-white" to="/AttendExam">Attend Exam</NavLink>
+                <NavLink className="nav-link text-white" to="/AttendExam">📝Attend Exam</NavLink>
               </li>
              
             </ul>
