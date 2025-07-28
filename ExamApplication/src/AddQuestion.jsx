@@ -69,7 +69,7 @@ class AddQuestion extends React.Component {
                     </div>
 
                    <div className="form-group mt-1 p-1">
-            <input type="button" id="btn" className="form-control bg-light text-dark" onClick={this.saveQuestion} value="Add Question" />
+            <input type="button" id="btn" className="form-control text-dark" onClick={this.saveQuestion} value="Add Question" />
           </div>
                 </div>
             </>
