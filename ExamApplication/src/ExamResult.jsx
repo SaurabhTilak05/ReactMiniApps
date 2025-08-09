@@ -25,7 +25,7 @@ const ExamResult = ({ questions, answers, score }) => {
             const user = answers[i] || "Not Answered";
             const isCorrect = user === correct;
             return (
-              <tr key={i}>
+              <tr >
                 <td>{i + 1}</td>
                 <td>{q.name}</td>
                 <td>{user}</td>
