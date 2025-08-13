@@ -22,6 +22,15 @@ class ProductService {
     })
   }
 
+ getProductByName(name) {
+    return axios.get(`http://localhost:8080/getProdByName/)${name}`, {
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+  }
+
+  
 
 }
 export default new ProductService();
