@@ -41,3 +41,18 @@ exports.deleteProd=(id)=>{
     })
   })
 }
+
+exports.getProdByName=(name)=>{
+   return new Promise ((resolve, reject)=>{
+        db.query("select *from products where name like '%"+name+"%'",[name],(err, result)=>{
+            if(err)
+            {
+                return reject("Data Not Found");
+
+            }else{
+                return resolve(result);
+            }
+
+        })
+    })
+}

@@ -24,7 +24,6 @@ class AddProduct extends React.Component {
     })
     .catch((err) => {
       this.setState({ msg: "Failed to save product" });
-      console.error(err);
     });
 };
 

@@ -5,6 +5,7 @@ export default class ViewProduct extends React.Component {
     super(props);
     this.state = {
       productList: [],
+      name:""
      
     };
   }
@@ -33,7 +34,11 @@ export default class ViewProduct extends React.Component {
     return (
       <div className="container mt-5 bg-dark p-5">
         <h1 className="mb-4"  style={{color:'white', textAlign:'center'}} >Product List</h1>
+        <div className="form-group ">
+          <input type="text" name="" id="" value={this.state.name} className="form-control"  placeholder="Search Product by Name" onChange={(e) => this.setState({ name:e.target.value})  } />
+          </div>
         <table className="table table-dark text-white">
+          
           <thead className="tbl table-dark text-white">
             <tr>
               <th>SR.NO</th>
