@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import AddProduct from "./components/addproduct.jsx";
 import ViewProduct from "./components/viewProduct.jsx";
 export default class App extends React.Component{
-    
+
   render() {
     return <>
       <BrowserRouter>
@@ -28,6 +28,7 @@ export default class App extends React.Component{
           <Route path="/" />
           <Route path="/addproduct" element={ <AddProduct/>} />
           <Route path="/viewproduct" element={ <ViewProduct/>}/>
+          
         </Routes>
       </BrowserRouter>
       
