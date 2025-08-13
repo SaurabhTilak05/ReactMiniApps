@@ -4,6 +4,9 @@ let router=require("./routes/route.js");
 require("dotenv").config();
 let app = express();
 
+const cors = require("cors");
+app.use(cors());
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
